@@ -1,0 +1,954 @@
+@font-face {
+    font-family: 'sancoalesoftenedregular';
+    src: url('../fonts/sancoale_softened_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sancoalesoftenedregular_3';
+    src: url('../fonts/sancoale_softened_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sancoalesoftenedregular_5';
+    src: url('../fonts/sancoale_softened_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sancoalesoftenedregular_4';
+    src: url('../fonts/sancoale_softened-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    position: relative;
+    min-width: 1440px;
+    min-height: 720px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ************ GENERAL ****************** */
+
+#a {
+    text-decoration: none;
+}
+
+.router-button {
+    border-radius: 47px;
+    color: #FFFFFF;
+    font-family: 'sancoalesoftenedregular_5';
+    width: 181px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 0;
+    background-color: #0181B8;
+    box-shadow: 0 8px 13px 0 #016a98;
+    border: solid #ABC233 3px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+ .router-button:hover {
+    background: #ABC233;
+    border: solid #FFFFFF 3px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.container-next-button {
+    cursor: pointer;
+    display: flex;
+    padding: 5px;
+}
+
+.next-button {
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #ABC233;
+    font-size: 30px;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    margin-bottom: 13px;
+}
+
+.next-button__back {
+    transform: rotate( -180deg );
+}
+
+.faq-button{
+    background-color: #3E3F42;
+}
+
+.faq-button:hover{
+    background-color: #ABC233;
+}
+
+.next-button:hover {
+    color: #FFFFFF;
+    background-color: #717580;
+}
+
+.container-home-icon {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    height: 39px;
+    cursor: pointer;
+    display: flex;
+    z-index: 2;
+}
+
+.home-icon {
+    cursor: pointer;
+    color: #3E3F42;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 13px 0 #016a98;
+    font-size: 24px;
+    height: 37px;
+    padding: 6px;
+    z-index: 1;
+}
+
+.home-icon:hover {
+    color: #FFFFFF;
+    background-color: #ABC233;
+}
+
+.home-back {
+    right: 125px;
+    margin-right: 20px;
+}
+
+.content-title {
+    color: #ffffff;
+    font-family: 'sancoalesoftenedregular_5';
+    font-size: 50px;
+    font-weight: 100;
+    text-shadow: 3px 2px 13px rgb(0,74,106);
+    width: 570px;
+    margin-bottom: 10px;
+}
+
+.content-title__intro {
+    font-size: 100px;
+    line-height: 1.2;
+}
+
+.content-title__shape {
+    position: absolute;
+    font-size: 38px;
+}
+
+.container-title {
+    background-color: rgba(1, 129, 184, 0.9);   	
+    border-radius: 0px 0px 40px 40px;
+    width: 734px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-info {
+    font-family: 'sancoalesoftenedregular_3';
+    font-size: 30px;
+    font-weight: 100; 
+    line-height: 1.2;
+}
+
+.blue-span {
+    color: #0096D6;
+}
+
+/* .indent-span {
+    text-indent: 10px;
+} */
+
+.black-span {
+    font-family: 'sancoalesoftenedregular_4';
+}
+
+.faq{
+    font-family: 'sancoalesoftenedregular_5';
+    color: #3E3F42;
+}
+
+.fa-question {
+    padding-right: 5px;
+}
+
+.green-button {
+    background: linear-gradient(90deg, rgba(175,198,60,1) 40%, rgba(198,216,106,1) 70%);
+    display: flex;
+    align-items: center;
+    min-width: 377px;
+    margin-bottom: 20px;
+    font-family: 'sancoalesoftenedregular_5';
+    font-size: 56px;
+    text-decoration: none;   
+    position: relative;
+    padding: 10px;
+    color: #ffffff;
+    background-clip: padding-box; /* !importanté */
+    border: solid 3px transparent; /* !importanté */
+    border-radius: 50px;
+}
+
+.green-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -3px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, rgba(198,216,106,1) 30%, rgba(171,194,51,1) 70%);
+}
+
+.green-button:hover {
+    background: linear-gradient(90deg, rgba(62,63,66,1) 30%, rgba(113,117,128,1) 70%);
+    border: 3px solid rgba(62, 64, 66);
+}
+
+.green-button__components{
+    width: 428px;
+}
+
+.green-button__circle {
+    background: white;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    padding: 13px 6px 0 5px;
+}
+
+.fist-book {
+    margin: 5px;
+}
+
+.fist-world {
+    margin-left: 9px;
+}
+
+.green-button__text {
+    margin-left: 15px;
+}
+
+.components-button-text {
+    font-size: 40px;
+}
+
+.green-button__intro{
+    margin-top: -90px;
+    opacity: 0;
+}
+
+.green-button__what {
+    width: 377px;
+}
+
+.container-info__small {
+    width: 393px;
+    height: 244px;
+}
+
+.container-info__medium {
+    display: flex;
+    background-color: #F5F5F5;
+    width: 511px;
+    height: 370px;
+    border-radius: 5%;
+    align-items: center;
+    padding: 30px;
+}
+
+.container-info__large {
+    display: flex;
+    background-color: #F5F5F5;
+    width: 748px;
+    height: 370px;
+    border-radius: 5%;
+    align-items: center;
+    padding: 30px;
+}
+
+.container-info__blue {
+    display: flex;
+    width: 511px;
+    height: 225px;
+    align-items: center;
+}
+
+/* ******************** INTRO ************************** */
+
+.container-intro {
+    position: relative;
+    background: linear-gradient(180deg, rgba(30,68,113,1) 10%, rgba(13,39,77,1) 57%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.start-button {
+    z-index: 2;
+    position: absolute;
+    bottom: 40%;
+    left: 15%;
+    transition: all 0.3s linear;
+    transform: scale(1.7);
+}
+
+.start-button:hover {
+    transform: scale(1.4);
+}
+
+.start-button-animated {
+    opacity: 0;
+}
+
+.wave {
+    position: absolute;
+    bottom: 8%;
+    left: 62%;
+    transition: all 0.4s linear;
+    transform: scale(1.4);
+}
+
+.first-wave-animated {
+    opacity: 0;
+}
+
+.second-wave {
+    position: absolute;
+    bottom: -150%;
+    right: -37%;
+    left: auto;
+    transition: all 0.8s linear;
+    transform: scale(1.5);
+}
+
+.second-wave-animated {
+   bottom: -55%;
+}
+
+.blue-container {
+    position: absolute;
+    background: #0181B8;
+    width: 100%;
+    height: 0%;
+    transition: all 0.4s linear;
+}
+
+.cisco-logo {
+    position: absolute;
+    top: 40%;
+    opacity: 0;
+    transition: opacity .6s linear, transform .6s linear;
+    transform: translateX(-50%) scale(0);
+    z-index: 1;
+    left: 50%;
+}
+
+.cisco-logo-animated {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.cisco-logo__corner{
+    position: absolute;
+    left: 5%;
+    transform: translateY(-80%) scale(0.3);
+    z-index: 1;
+}
+
+.cisco-logo__corner-animated{
+    transition: all 0.8s linear;
+    transform: translateY(0%) scale(0.3);
+}
+
+.tp-logo__corner {
+    position: absolute;
+    z-index: 1;
+    left: -3%;
+    top: 5%;
+    transition: all 0.5s linear;
+}
+
+.tp-logo-animated {
+    left: 6%;
+}
+
+.content-intro {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.container-intro__title {
+    position: absolute;
+    background: #0181B8;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home-image {
+    max-width: 60%;
+    margin-left: -5%;
+}
+
+/* *************** NETWORK *************** */
+
+.network-section {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(270deg, rgba(0,150,214,1) 40%, rgba(1,129,184,1) 59%);
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.network-section::before {
+    content: "";
+    background-image: url(../images/bg.png);
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.tp-network__logo {
+    position: absolute;
+    z-index: 1;
+    left: 6%;
+    top: 5%;
+    transition: all 0.5s linear;
+}
+
+.cisco-network__logo {
+    position: absolute;
+    z-index: 1;
+    transform: translateY(0%) scale(0.3);
+}
+
+.network-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.container-network-image {
+    width: 900px;
+    height: 100%;
+}
+
+.network-image {
+    position: relative;
+    width: 100%;
+    margin-top: 15%;
+    z-index: 1;
+}
+
+.network-content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin: 5% 0 0 5%;
+    z-index: 1;
+}
+
+.container-info__box {
+    width: 560px;
+    overflow: hidden;
+}
+
+.container-info {
+    display: flex;
+    transition: transform .3s linear;
+}
+
+.container-info__network--text {
+    padding-left: 20px;
+}
+  
+/* ******************** TYPICAL ******************** */
+
+.typical-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,150,214,1) 22%, rgba(1,129,184,1) 63%);
+}
+
+.typical-section::before {
+    content: "";
+    background-image: url(../images/bg.png);
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-typical-images {
+    position: relative;
+    bottom: 4%;
+    left: 2%;
+    max-width: 1440px;
+    width: 100%;
+    height: 720px;
+    z-index: 1;
+    background-image: url(../images/lines.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.container-images__typical {
+    position: absolute;
+    width: 230px;
+}
+
+.container-images__typical img {
+    transition: all 0.2s linear;
+}
+
+.container-images__typical:hover img {
+    transform: scale(0.9);
+}
+
+.container-title__typical {
+    right: 15%;
+    position: fixed;
+}
+
+.typical-components {
+    position: absolute;
+    top: 27%;
+    display: flex;
+}
+
+.typical-image {
+    width: 100%;
+}
+
+.container-typical__lines {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container-typical__switch {
+    left: 0%;
+    bottom: -11%;
+    width: 257px;
+}
+
+.router-button__switch {
+    position: absolute;
+    left: 10px;
+    bottom: 40px;
+}
+
+.container-typical__router {
+    left: 10%;
+    bottom: 4%;
+    width: 255px;
+}
+
+.container-typical__firewall {
+    bottom: 17%;
+    left: 24%;
+    width: 311px;
+}
+
+.router-button__firewall {
+    position: absolute;
+    left: 55px;
+    top: 72%;
+}
+
+.container-typical__server {
+    width: 263px;
+    left: 45%;
+    bottom: -8%;
+}
+
+.router-button__server{
+    position: absolute;
+    top: -50px;
+    right: 60px;
+} 
+
+.container-typical__second-switches {
+    right: 21%;
+    bottom: 13%;
+    width: 257px;
+}
+
+.router-button__second-switch {
+    position: absolute;
+    top: 68%;
+    right: 23%;
+}
+
+.container-typical__colaboration {
+    right: 5%;
+    bottom: -11%;
+    width: 276px;
+}
+
+.router-button__colaboration {
+    position: absolute;
+    bottom: 55%;
+    right: 30px;
+}
+
+/* **************** TYPICAL SECTIONS *************** */
+
+.typical-components__image {
+    padding: 150px 100px 0 0;
+}
+
+.typical-components__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ++server++ */
+
+
+.container-server__content {
+    position: absolute;
+    top: 25%;
+}
+
+.typical-image__server{
+    padding: 0 100px 0 0;
+}
+
+/* ++collab++ */
+
+.container-collab__image {
+    position: relative;
+    width: 471px;
+    height: 499px;
+}
+
+.typical-image__collab {
+    padding: 0 100px 0 0;
+    width: 100%;
+}
+
+/* ++ DIFFERENCE ++ */
+
+.typical-image__difference {
+    padding: 30px 0 0 50px;
+}
+
+/* ********** components ************ */
+
+.components-section {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0181B8;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.components-home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.components-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-text__typical {
+    width: 451px;
+    margin-right: 15px;
+}
+
+.button-text__telemetry{
+    width: 300px;
+}
+
+.components-button-text__telemetry{
+    font-size: 56px;
+} 
+
+
+
+.content-title__components {
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 10%;
+}
+
+.second-wave__components {
+    top: 34%;
+    left: -3%;
+    transition: none;
+}
+
+
+/**************** telemetry *************/
+
+.components-telemetry {
+    position: relative;
+    min-width: 1440px;
+    min-height: 720px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.second-wave_telemetry {
+    position: absolute;
+    z-index: 2;
+    top: 51%;
+    left: -33%;
+    transform: scale(1.5);
+}
+
+.content-title__telemetry {
+    width: 288px;
+}
+
+.container-title__telemetry {
+    position: absolute;
+    width: 288px;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.telemetry-img {
+    position: absolute;
+    transition: opacity .1s linear;
+}
+
+.telemetry-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.components-telemetry__images {
+    position: absolute;
+    width: 985px;
+    height: 470px;
+    top: 40%;
+    left: 3%;
+    z-index: 2;
+}
+
+.telemetry-1 {
+    top: -3%;
+    left: 2%;
+    z-index: 4;
+}
+
+.telemetry-2 {
+    bottom: -4%;
+    left: 8%;
+    z-index: 3;
+    /* opacity: 0; */
+}
+
+.telemetry-3 {
+    bottom: 9%;
+    left: 56%;
+    z-index: 2;
+    /* opacity: 0; */
+}
+
+.telemetry-4{
+    top: 11%;
+    right: -2%;
+    z-index: 1;
+    /* opacity: 0; */
+}
+
+.components-telemetry__info {
+    position: absolute;
+    width: 393px;
+    right: 8%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.next-button__telemetry {
+    margin-top: -18%;
+}
+
+.components-telemetry__info--box {
+    position: absolute;
+    display: flex;
+    background-color: #F5F5F5;
+    width: 393px;
+    min-height: 90px;
+    height: auto;
+    align-items: flex-start;
+    padding: 30px;
+    margin-top: 130px;
+    opacity: 0;
+    transition: opacity .1s linear;
+    flex-direction: column;
+}
+
+.components-telemetry__info--box:nth-child(-n+2){
+    opacity: 1;
+}
+
+.components-telemetry__info-show--box-2 {
+    opacity: 1;
+}
+
+.components-telemetry__info-show--box-3 {
+    opacity: 1;
+}
+
+.components-telemetry__info-show--box-4 {
+    opacity: 1;
+}
+
+.telemetry-img {
+    opacity: 0;
+}
+
+.telemetry-img:nth-child(-n+1) {
+    opacity: 1;
+}
+
+.telemetry-show--2 {
+    opacity: 1;
+}
+
+.telemetry-show--3 {
+    opacity: 1;
+}
+
+.telemetry-show--4 {
+    opacity: 1;
+}
+/* *********** DIFFERENCE ********* */
+
+.container-difference__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1440px), screen and (max-width:1600px){
+
+    .start-button {
+      transform: scale(1);
+      bottom: 30%;
+    }
+
+    .wave {
+      transform: scale(1);
+      left: 45%;
+      bottom: -9%;
+    }
+
+    .second-wave {
+      top: 50%;
+    }
+
+    .second-wave-animated {
+        top: 12%;
+        left: -33%;
+     }
+
+    .green-button__what {
+         width: 370px;
+     }
+
+    .home-back {
+         margin-right: 0px;
+     }
+
+    .container-typical-images {
+         bottom: 11%;
+     }
+    
+    .typical-components {
+         top: 22%;
+    }
+
+    .container-difference {
+        top: 11%;
+    }
+
+    .components-telemetry__images {
+        top: 25%;
+    }
+
+    .components-telemetry__info {
+        top: 40%;
+    }
+
+}
+
